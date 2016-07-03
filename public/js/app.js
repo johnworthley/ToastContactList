@@ -113,4 +113,10 @@ angular.module("contactsApp", ['ngRoute'])
         $scope.deleteContact = function(contactId) {
             Contacts.deleteContact(contactId);
         }
+    })
+
+    .controller("TileController", function($scope, $http) {
+            $http.get('tile_data.json').then(function(tileData){
+                $scope.myTiles = tileData.data;
+            });
     });

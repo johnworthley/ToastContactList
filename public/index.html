@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></scrip>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- Angular lib -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" type="text/css" href="js/style.css">
     <!-- Create some padding for body -->
@@ -23,7 +24,7 @@
       }
     </style>
 
-    <script src="/js/app.js"></script>
+    <script src="js/app.js"></script>
   </head>
 
   <body>
@@ -40,15 +41,15 @@
       </div>
     </nav>
 
-  <div id="mytile">
+  <div id="mytile" ng-controller="TileController">
   <main>
-    <section>
-      <div>
-        <h4>Lunch Date</h4>
-        <p>$5</p>
-        <p>Redifer</p>
-        <p>Mon-Fri</p>
-        <p>11am-1pm</p>
+    <section ng-repeat="tile in myTiles">
+      <div >
+        <p>{{tile.title}}</p>
+        <p>{{tile.price}}</p>
+        <p>{{tile.where}}</p>
+        <p>{{tile.day}}</p>
+        <p>{{tile.time}}</p>
         <div class="tools">
           <a class="delete">
             Remove
@@ -220,7 +221,5 @@
   Sign up for exclusive early access to Toast. By Fall 2016, we hope to gather your recommendations for improvement. Let's Toast.
   </h4>
     <!-- Dynamically render templates -->
-    <div class="container" ng-view>
-    </div>
   </body>
 </html>
