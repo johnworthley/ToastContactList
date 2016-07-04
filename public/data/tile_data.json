@@ -1,0 +1,80 @@
+[{
+        "title" : "Lunch Date",
+        "price" : "$5",
+        "where" : "Redifer",
+        "day" : "Mon - Fri",
+        "time" : "11am - 1pm",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Buy your Groceries",
+        "price" : "$25",
+        "where" : "Wegmans",
+        "day" : "Sat - Sun",
+        "time" : "Anytime",
+        "showTile": "ture"
+    }, 
+    {
+        "title" : "Play Soccer with You",
+        "price" : "$10",
+        "where" : "IST Soccer with You",
+        "day" : "Mon - Fri",
+        "time" : "6pm - 10pm",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Work the Fuel Farm",
+        "price" : "$50",
+        "where" : "Fuel Farm",
+        "day" : "Mon - Fri",
+        "time" : "All day",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Do your Homework",
+        "price" : "$30/hr",
+        "where" : "Online",
+        "day" : "Mon - Fri",
+        "time" : "11am - 1pm",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Cook your Dinner",
+        "price" : "$20",
+        "where" : "Catered",
+        "day" : "Mon - Fri",
+        "time" : "11am - 1pm",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Mow your Yard",
+        "price" : "$50",
+        "where" : "Your Yard",
+        "day" : "Mon - Web",
+        "time" : "5pm - 9pm",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Hangout with you",
+        "price" : "Free",
+        "where" : "Anywhere",
+        "day" : "Mon - Fri",
+        "time" : "5pm - 7pm",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Negotiate for You",
+        "price" : "$15",
+        "where" : "On the phone",
+        "day" : "Sat - Sun",
+        "time" : "All day",
+        "showTile": "ture"
+    },
+    {
+        "title" : "Motivational Speech",
+        "price" : "$5",
+        "where" : "Anywhere",
+        "day" : "Fri",
+        "time" : "11am - 1pm",
+        "showTile": "false"
+    }]
