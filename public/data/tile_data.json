@@ -17,7 +17,7 @@
     {
         "title" : "Play Soccer with You",
         "price" : "$10",
-        "where" : "IST Soccer with You",
+        "where" : "IST Soccer Field",
         "day" : "Mon - Fri",
         "time" : "6pm - 10pm",
         "showTile": "ture"
