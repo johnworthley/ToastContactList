@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
 
-// Connect to the database before starting the application server. 
+// Connect to the database before starting the application server.
 mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   if (err) {
     console.log(err);
@@ -49,7 +49,7 @@ app.get("/contacts", function(req, res) {
     if (err) {
       handleError(res, err.message, "Failed to get contacts.");
     } else {
-      res.status(200).json(docs);  
+      res.status(200).json(docs);
     }
   });
 });
@@ -82,7 +82,7 @@ app.get("/contacts/:id", function(req, res) {
     if (err) {
       handleError(res, err.message, "Failed to get contact");
     } else {
-      res.status(200).json(doc);  
+      res.status(200).json(doc);
     }
   });
 });
@@ -108,4 +108,25 @@ app.delete("/contacts/:id", function(req, res) {
       res.status(204).end();
     }
   });
+});
+//configure Braintree
+var braintree = require("braintree");
+
+var gateway = braintree.connect({
+  environment: braintree.Environment.Sandbox,
+  merchantId: "useYourMerchantId",
+  publicKey: "useYourPublicKey",
+  privateKey: "useYourPrivateKey"
+});
+
+//send client token to client
+app.get("/client_token", function (req, res) {
+  gateway.clientToken.generate({}, function (err, response) {
+    res.send(response.clientToken);
+  });
+});
+
+//Get payment nonce from clientapp.post("/checkout", function (req, res) {
+  var nonceFromTheClient = req.body.payment_method_nonce;
+  // Use payment method nonce here
 });
