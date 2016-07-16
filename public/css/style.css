@@ -48,8 +48,7 @@ h4 {
     justify-content: space-between;
 }
 
-.branding {
-  float: left;
+.branding 
   margin: 20px;
 }
 
@@ -96,8 +95,7 @@ nav ul li.user.hello {
   padding: 10px 15px;
 }
 
-nav ul li a {
-  float: left;
+nav ul li a 
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 4px;
@@ -289,7 +287,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* Form Styles */
 
-  input {
+ input[type=submit] {
     width: 100%;
     display: inline-block;
     font-weight: 100;
@@ -334,7 +332,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       white-space: nowrap;
       vertical-align: middle;
       cursor: pointer;
-      border: 1px solid transparent;
+      border: 1px;
       border-radius: 4px;
       background: #C61C6F;
       color: white;
@@ -352,7 +350,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
 
-  .btn .btn-left { float: left; }
+  .btn .btn-left }
   .btn .btn-right { float: right; }
   .btn:hover { background-color: #DC322F; }
 
@@ -435,7 +433,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   .search .formgroup {
-    float: left;
     width: 33%;
   }
 
@@ -480,14 +477,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   .userlist li {
     width: 50%;
-    float: left;
     padding: 12px;
     margin-bottom: 10px;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    border: 1px solid transparent;
+    border: 1px;
   }
 
   .userlist li:hover {
@@ -515,14 +511,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   .userlist .buttons {
     display: block;
-    float: left;
     text-align: left;
     margin-right: 5px;
   }
 
   .userlist .info {
     display: block;
-    float: left;
     text-align: left;
   }
 
@@ -590,7 +584,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   .addmeeting .inputwrapper input {
-      float: left;
+
       width: 100%;
   }
 
