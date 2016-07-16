@@ -4,7 +4,8 @@
         "where" : "Redifer",
         "day" : "Mon - Fri",
         "time" : "11am - 1pm",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Buy your Groceries",
@@ -12,7 +13,8 @@
         "where" : "Wegmans",
         "day" : "Sat - Sun",
         "time" : "Anytime",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     }, 
     {
         "title" : "Play Soccer with You",
@@ -20,7 +22,8 @@
         "where" : "IST Soccer Field",
         "day" : "Mon - Fri",
         "time" : "6pm - 10pm",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Work the Fuel Farm",
@@ -28,7 +31,8 @@
         "where" : "Fuel Farm",
         "day" : "Mon - Fri",
         "time" : "All day",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Do your Homework",
@@ -36,7 +40,8 @@
         "where" : "Online",
         "day" : "Mon - Fri",
         "time" : "11am - 1pm",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Cook your Dinner",
@@ -44,7 +49,8 @@
         "where" : "Catered",
         "day" : "Mon - Fri",
         "time" : "11am - 1pm",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Mow your Yard",
@@ -52,7 +58,8 @@
         "where" : "Your Yard",
         "day" : "Mon - Web",
         "time" : "5pm - 9pm",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Hangout with you",
@@ -60,7 +67,8 @@
         "where" : "Anywhere",
         "day" : "Mon - Fri",
         "time" : "5pm - 7pm",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Negotiate for You",
@@ -68,7 +76,8 @@
         "where" : "On the phone",
         "day" : "Sat - Sun",
         "time" : "All day",
-        "showTile": "ture"
+        "showTile" : "ture",
+        "owner" : "admin"
     },
     {
         "title" : "Motivational Speech",
@@ -76,5 +85,6 @@
         "where" : "Anywhere",
         "day" : "Fri",
         "time" : "11am - 1pm",
-        "showTile": "false"
+        "showTile": "true",
+        "owner" : "admin"
     }]

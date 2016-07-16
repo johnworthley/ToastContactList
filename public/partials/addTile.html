@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="../css/addTile.css">
+<h4 id="dialogHeader">Add New Tile</h4>
+<div id="addTileForm" class="input-group">
+    <span class="input-group-addon">Title:</span>
+    <input class="form-control" type="text" ng-model="newTile.title" aria-describedby="basic-addon1"><br>
+</div>
+<div id="addTileForm" class="input-group">
+    <span class="input-group-addon">Price: $</span>
+    <input class="form-control" type="number" ng-model="newTile.price"><br>
+</div>
+<div id="addTileForm" class="input-group">
+    <span class="input-group-addon">Where:</span>
+    <input class="form-control" type="text" ng-model="newTile.where"><br>
+</div>
+<div id="addTileForm" class="input-group">
+    <span class="input-group-addon">Day(s):</span>
+    <div class="btn-group">
+        <a class="btn btn-primary" ng-click="$event.stopPropagation();" ng-model="newTile.day.su" uib-btn-checkbox style="margin-left:10px">Su</a>
+        <a class="btn btn-primary" ng-model="newTile.day.mo" uib-btn-checkbox>Mo</a>
+        <a class="btn btn-primary" ng-model="newTile.day.tu" uib-btn-checkbox>Tu</a>
+        <a class="btn btn-primary" ng-model="newTile.day.we" uib-btn-checkbox>We</a>
+        <a class="btn btn-primary" ng-model="newTile.day.th" uib-btn-checkbox>Th</a>
+        <a class="btn btn-primary" ng-model="newTile.day.fr" uib-btn-checkbox>Fr</a>
+        <a class="btn btn-primary" ng-model="newTile.day.sa" uib-btn-checkbox>Sa</a>
+     </div>
+</div>
+<div id="addTileForm" class="input-group">
+    <span class="input-group-addon">Time:</span>
+    <input class="form-control" type="text" ng-model="newTile.time" placeholder="12pm - 1pm">
+</div>
+<div id="addTileForm" class="input-group" style="width: 98%; font-size:18px">
+        <button style="float: left" class="delete" ng-click="cancel()">Cancel</button>
+        <button ng-disabled="disableSubmit" style="float: right" class="details" ng-click="submit()">Submit</button>
+</div>

@@ -32,7 +32,7 @@
     <script src="../js/app.js"></script>
   </head>
 
-  <body>
+  <bod  ng-controller="TileController" >
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -41,13 +41,13 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#/">Home</a></li>
-            <li style="float: right"><a class="details" ng-controller="TileController" ng-click="loadAddTilePartial()"><span class="glyphicon glyphicon-plus"></span> Add New Tile</a></li>
+            <li style="float: right;" id="addNewTileButton"><a style=" color: white;" class="details"ng-click="loadAddTilePartial();$event.stopPropagation();"><span class="glyphicon glyphicon-plus"></span> Add New Tile</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-  <div id="mytile" ng-controller="TileController" style="overflow-y: auto">
+  <div id="mytile"style="overflow-y: auto">
   <main>
     <section ng-repeat="tile in myTiles" ng-if="tile.showTile">
       <div>
@@ -58,9 +58,11 @@
         <p>{{tile.time}}</p>
         <div class="tools">
           <a class="delete" ng-click="hideTile(tile);">
+            <span class="glyphicon glyphicon-minus"></span>
             Hide
           </a>
           <a class="details" ng-click="loadPayPartial(tile)">
+            <span class="glyphicon glyphicon-credit-card"></span>
             Buy
           </a>
         </div>

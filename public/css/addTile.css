@@ -1,0 +1,36 @@
+#addTileForm { width: auto; height: auto; min-height: 107px; max-height: none; font-size: 0.8em; margin: 5px;}
+#addTileForm input {font-size: 1em; height: auto;}
+#addTileForm div a {height: auto; width: auto; font-size: 0.8em; margin:1px; background-color: white; border: 1px solid #ccc; color:#999}
+
+.input-group-addon {min-width:100px; text-align:left;}
+
+input[type=text], select {
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=time], select {
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=checkBox] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20p;
+    display: inline;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -48,7 +48,21 @@ h4 {
     justify-content: space-between;
 }
 
-.branding 
+#dialogHeader { 
+    background-color: #000033;
+    color: white;
+    font-size: 40px;
+    font: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#addNewTileButton a:hover {
+    background-color: #37ad79;
+}
+
+.branding {
   margin: 20px;
 }
 
