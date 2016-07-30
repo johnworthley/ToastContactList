@@ -1,12 +1,14 @@
-<div style="background-color:#efeff5; width: auto; height: auto; min-height: 107px; max-height: none;">
-<form id="checkout" method="post" action="/checkout">
-  <a style="float: right" ng-click="cancel()">
-    <span style="color: #ec4342; cursor: pointer; font-size: 1.2em;" class="glyphicon glyphicon-remove-sign" title="Close"></span>
+<h4 id="dialogHeader" style="margin-bottom: 5px;">Confrim Payment
+    <a style="float: right" ng-click="cancel()">
+    <span style="color: white; background-color: #ec4342; cursor: pointer; font-size: 1.2em; margin-right: 5px;" class="glyphicon glyphicon-remove" title="Close"></span>
   </a>
+</h4>
+<div style="width: auto; height: auto; min-height: 107px; max-height: none;">
+<form id="checkout" method="post" action="/checkout">
   <div id="payment-form"></div>
-  <input type="submit" value="Pay {{amount}}"></input>
+  <input style="color:#ffffff; background-color: #37ad79;" type="submit" value="Pay {{amount}}"></input>
 </form>
-
+`
 <script>
 // We generated a client token for you so you can test out this code
 // immediately. In a production-ready integration, you will need to
